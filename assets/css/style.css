@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -10,7 +11,7 @@ html, body {
 }
 
 body {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,8 +24,8 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   font-weight: 400;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 body #quote-box {
@@ -36,11 +37,10 @@ body #quote-box {
 }
 
 body #quote-box .content {
-  -webkit-transition: opacity .7s, color .1s;
-  transition: opacity .7s, color .1s;
+  -webkit-transition: opacity 0.7s, color 0s;
+  transition: opacity 0.7s, color 0s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
-  opacity: 0;
 }
 
 body #quote-box .content .text {
@@ -87,8 +87,8 @@ body #quote-box .footer .footer__button {
   text-decoration: none;
   color: #fff;
   padding: 8px 10px;
-  -webkit-transition: all .7s;
-  transition: all .7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 body .author {

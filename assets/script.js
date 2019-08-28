@@ -74,21 +74,25 @@ function randomize() {
 
 function changeQuote(e) {
   const randomNumber = randomize();
-  e.preventDefault();
-  body.style.color = `${quotes[randomNumber].color}`;
-  text.textContent = quotes[randomNumber].text;
-  author.textContent = quotes[randomNumber].author;
+  e.preventDefault(); 
   tweetQuote.href = `https://twitter.com/intent/tweet?hashtags=ulalala&text="${
     quotes[randomNumber].text
   }"`;
   content.style.opacity = 0;
   setTimeout(() => {
+    setTimeout(() => {
+      text.textContent = quotes[randomNumber].text;
+      author.textContent = quotes[randomNumber].author;
+    }, 300);
+    body.style.color = `${quotes[randomNumber].color}`;
     body.style.background = `${quotes[randomNumber].color}`;
     buttons.forEach(
       button => (button.style.background = quotes[randomNumber].color)
     );
   }, 500);
 }
+
+
 
 newQuote.addEventListener("click", changeQuote);
 document.addEventListener("DOMContentLoaded", changeQuote);
